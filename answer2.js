@@ -3,9 +3,10 @@ var array2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 var findOdds = function (array) {
     var oddArray = [];
     var evenArray = [];
-    for (var i = 0; i < array.length; i++) {
-        console.log(array.length);
-        console.log(i);
+    var length = array.length;
+    for (var i = 0; i < length; i++) {
+        console.log('Array length is', array.length);
+        console.log('i is', i);
         if (i % 2 === 0) {
             evenArray.push(array.shift());
             console.log('evenArray', evenArray);
@@ -17,4 +18,4 @@ var findOdds = function (array) {
     }
     return oddArray;
 };
-console.log(findOdds(array2));
+console.log(findOdds(array1));

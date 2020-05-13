@@ -4,9 +4,10 @@ let array2: Array<number | string> = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i
 const findOdds = (array: Array<number | string>): Array<number | string> => {
 		let oddArray: Array<number | string> = []
 		let evenArray: Array<number | string> = []
-		for (let i: number = 0; i < array.length; i++){
-			console.log(array.length)
-			console.log(i)
+		let length: number = array.length
+		for (let i: number = 0; i < length; i++){
+			console.log('Array length is', array.length)
+			console.log('i is', i)
 			if (i % 2 === 0) {
 				evenArray.push(array.shift())
 				console.log('evenArray', evenArray)
@@ -19,4 +20,4 @@ const findOdds = (array: Array<number | string>): Array<number | string> => {
 		return oddArray
 }
 
-console.log(findOdds(array2))
+console.log(findOdds(array1))
